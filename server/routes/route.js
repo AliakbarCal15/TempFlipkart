@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
-import { userSignup } from '../controller/user-controller.js'; // Corrected folder name & added .js
+import { userSignup } from '../controller/user-controller.js'; // ✅ Fixed path
 
-router.post('/signup', userSignup); // Ensure this route exists
+router.post('/signup', userSignup);
 
 export default router;
